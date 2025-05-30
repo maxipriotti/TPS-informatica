@@ -19,17 +19,8 @@ int main(int argc, char *argv[]) {
 	scanf ("%f", &peso);  
 	
 	imc = (peso / (altura * altura));
-	
-	printf("Su índice de masa corporal es: %.2f\n", imc);
-	printf("Indice       | Condicion\n");
-	printf("-----------------------------\n");
-	printf("<18.5        | Bajo peso\n");
-	printf("18.5 a 24.9  | Normal\n");
-	printf("25.0 a 29.9  | Sobrepeso\n");
-	printf(">=30         | Obesidad\n");
-	
-	
-/*	if (imc < 18.5){
+		
+if (imc < 18.5){
 		printf ("Bajo peso");
 	}
 	
@@ -44,7 +35,6 @@ int main(int argc, char *argv[]) {
 	if (imc > 30){
 		printf ("Obesidad");
 	}
-*/
 return 0;
 }
 
