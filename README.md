@@ -1,1 +1,1 @@
-# bmi
+# repositorio informatica 
