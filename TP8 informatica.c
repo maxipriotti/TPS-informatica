@@ -36,7 +36,7 @@ int main (void) {
 int cuantas_piezas(int max) {
 	int n;
 	do {
-		printf("Cuántas piezas ingresará? ");
+		printf("CuÃ¡ntas piezas ingresarÃ¡? ");
 		scanf("%d", &n);
 	} while (n < 0 || n > max);
 	return n;
@@ -57,7 +57,7 @@ int rechazada(float diametro, float valor) {
 
 void cargar_piezas(float *p, int n){
 	
-	printf("Ingrese los diámetros de las piezas:\n");
+	printf("Ingrese los diÃ¡metros de las piezas:\n");
 	
 	for (int i = 0; i < n; i++) {
 		do {
@@ -76,7 +76,7 @@ int contar(int (*criterio)(float, float), float valor, float *p, int n){
 	
 	int contador;
 	
-	for (int i; i < n; i++){
+	for (int i=0; i < n; i++){
 		if (criterio(*(p+i), valor))
 			contador++;
 	}
@@ -117,7 +117,7 @@ void mostrar_piezas(char *mensaje, float *p, int n) {
 	printf("%s\n", mensaje); 
 		
 	for (int i = 0; i < n; i++) {
-		printf("Diámetro: %.2f\n", *(p + i)); 
+		printf("DiÃ¡metro: %.2f\n", *(p + i)); 
 	}
 }
 
